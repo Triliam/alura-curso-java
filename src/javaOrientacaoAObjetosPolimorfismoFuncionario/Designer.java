@@ -1,6 +1,6 @@
 package javaOrientacaoAObjetosPolimorfismoFuncionario;
 
-public class Designer extends Funcionario{
+public class Designer extends Funcionario {
 
     @Override
     public double getBonificacao() {
