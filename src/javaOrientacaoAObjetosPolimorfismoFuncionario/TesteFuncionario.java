@@ -3,7 +3,6 @@ package javaOrientacaoAObjetosPolimorfismoFuncionario;
 public class TesteFuncionario {
     public static void main(String[] args) {
 
-
         Gerente gerente = new Gerente();
         gerente.setNome("Nico");
         gerente.setCpf("77788899944");
