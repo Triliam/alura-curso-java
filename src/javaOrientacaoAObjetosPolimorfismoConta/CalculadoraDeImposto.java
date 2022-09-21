@@ -9,7 +9,7 @@ public class CalculadoraDeImposto {
         this.totalImposto = this.totalImposto + valor;
     }
 
-    public double getTotalImposto(){
+    public double getTotalImposto() {
         return totalImposto;
     }
 }
