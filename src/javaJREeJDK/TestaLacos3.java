@@ -17,10 +17,9 @@ public class TestaLacos3 {
         num = scan.nextInt();
 
         System.out.println("Tabuada de: " + num + "\n");
-        for (int i = 0; i <= 10; i ++){
+        for (int i = 0; i <= 10; i ++) {
             multiplica = i * num;
             System.out.println(i + " x " + num + " = " + multiplica);
         }
     }
-
 }
