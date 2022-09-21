@@ -1,13 +1,12 @@
 package javaOrientacaoAObjetosPolimorfismoFuncionario;
 
-public class Cliente implements Autenticavel{
+public class Cliente implements Autenticavel {
 
     AutenticacaoUtil autenticador;
 
     @Override
     public void setSenha(int senha) {
         this.autenticador.setSenha(senha);
-
     }
 
     @Override
