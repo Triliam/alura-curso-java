@@ -1,7 +1,6 @@
 package javaOrientacaoAObjetosPolimorfismoConta;
 
-public class ContaPoupanca extends Conta{
-
+public class ContaPoupanca extends Conta {
 
     public ContaPoupanca(int agencia, int numero) {
         super(agencia, numero);
@@ -10,6 +9,5 @@ public class ContaPoupanca extends Conta{
     @Override
     public void deposita(double valor) {
         super.saldo = saldo + valor;
-
     }
 }
