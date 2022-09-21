@@ -7,15 +7,15 @@ public abstract class Conta {
     private int numero;
     private Cliente titular;
 
-    public Conta(int agencia, int numero){ //Parametros no construtor - faz a Conta nascer com os parametros definidos
+    public Conta(int agencia, int numero) { //Parametros no construtor - faz a Conta nascer com os parametros definidos
         this.agencia = agencia;
         this.numero = numero;
     }
 
     public abstract void deposita(double valor);
 
-    public boolean saca (double valor){
-        if (saldo >= valor){
+    public boolean saca (double valor) {
+        if (saldo >= valor) {
             this.saldo = this.saldo - valor;
             return true;
         } else{
@@ -23,8 +23,8 @@ public abstract class Conta {
         }
     }
 
-    public boolean tranfere (double valor, Conta destino){
-        if (this.saca(valor)){
+    public boolean tranfere (double valor, Conta destino) {
+        if (this.saca(valor)) {
             destino.deposita(valor);
             return true;
         } else {
@@ -32,7 +32,7 @@ public abstract class Conta {
         }
     }
 
-    public double getSaldo (){
+    public double getSaldo () {
         return this.saldo;
     }
 
@@ -41,7 +41,7 @@ public abstract class Conta {
     }
 
     public void setNumero(int numero) {
-        if (numero <=0){
+        if (numero <=0) {
             System.out.println("Nao pode valor menor ou igual a 0");
             return;
         }
