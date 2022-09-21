@@ -1,8 +1,9 @@
 package javaOrientacaoAObjetosPolimorfismoFuncionario;
 
-public class Gerente extends Funcionario implements Autenticavel{
+public class Gerente extends Funcionario implements Autenticavel {
 
     private AutenticacaoUtil autenticador;
+    
     public Gerente() {
         this.autenticador = new AutenticacaoUtil();
     }
@@ -22,8 +23,4 @@ public class Gerente extends Funcionario implements Autenticavel{
         System.out.println("Chamando o método de bonificacao do GERENTE");
         return super.getSalario();
     }
-//
-//    public boolean getAutentica(){
-//        return autentica(senha);
-//    }
 }
